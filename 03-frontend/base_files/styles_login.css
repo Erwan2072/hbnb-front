@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #F4F4F4;
+    background-color: #ddd;
 }
 .logo {
     height: 50px;
@@ -16,7 +16,7 @@ header {
 .login-button {
     padding: 10px 20px;
     background-color: #4CAF50;
-    color: #fff;
+    color: #f4f4f4;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -26,7 +26,7 @@ header {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #F4F4F4;
+    background-color: #ddd;
 }
 main {
     padding: 20px;
@@ -37,7 +37,7 @@ form {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: #F4F4F4;
+    background-color: #ddd;
 }
 form label {
     display: block;
@@ -69,7 +69,7 @@ form button:hover {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #f4f4f4;
 }
 .place-card img,
 .place-image-large {

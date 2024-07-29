@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
+        <img src="logo.png" class="logo" alt="HBnB Logo">
         <nav>
+            <a href="index.html">Home</a>
             <a href="login.html" id="login-link">Login</a>
         </nav>
     </header>
@@ -20,9 +22,19 @@
             </select>
         </section>
         <section id="places-list">
-            <!-- List of places will be populated dynamically -->
+            <div class="place-card">
+                <img src="place1.jpg" class="place-image" alt="Place 1">
+                <h2>Place 1</h2>
+                <p>Price: $100/night</p>
+                <p>Location: City A</p>
+                <button class="details-button">View Details</button>
+            </div>
+            <!-- Répéter pour les autres lieux -->
         </section>
     </main>
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>

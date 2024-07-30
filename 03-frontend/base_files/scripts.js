@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function loginUser(email, password) {
   const errorMessage = document.getElementById('error-message');
   try {
-      const response = await fetch('http://localhost:5000/login', { // Assurez-vous que c'est l'URL correcte
+      const response = await fetch('http://localhost:5000/login', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
@@ -31,9 +31,12 @@ async function loginUser(email, password) {
       const data = await response.json();
       document.cookie = `token=${data.access_token}; path=/`;
       window.location.href = 'index.html';
+      console.log('Login successful:', data);
 
   } catch (error) {
-      errorMessage.textContent = `Login failed: ${error.message}`;
+      if (errorMessage) {
+          errorMessage.textContent = `Login failed: ${error.message}`;
+      }
       console.error('Error during login:', error);
   }
 }

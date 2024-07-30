@@ -52,7 +52,7 @@ h1, h2, h3 {
     text-align: left;
     font-size: 18px;
 }
-.reviews, .add-review {
+.reviews {
     background-color: #ddd;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -62,6 +62,7 @@ h1, h2, h3 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: left;
 }
+
 .review-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -69,7 +70,7 @@ h1, h2, h3 {
     padding: 15px;
     margin: 10px 0;
 }
-.review-form label, .review-form textarea, .review-form select, .review-form button {
+.review-form label, .review-form textarea, .review-form select, .review-form button, {
     display: block;
     width: 100%;
     margin: 10px 0;
@@ -98,4 +99,44 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+.add-review-form {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5%;
+    background-color: #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-review-form label, .add-review-form input, .add-review-form textarea, .add-review-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.add-review-form input, .add-review-form textarea, .add-review-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.add-review-form textarea {
+    height: 100px;
+}
+
+.add-review-form button {
+    background-color: #4CAF50; /* Changer la couleur selon vos préférences */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-review-form button:hover {
+    background-color: #a3f781; /* Changer la couleur selon vos préférences */
 }

@@ -91,6 +91,26 @@ h1, h2, h3 {
 .review-form button:hover {
     background-color: #a3f781;
 }
+.review-container {
+    background-color: #e0e0e0; /* même couleur que les encarts des reviews */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.add-review-button {
+    background-color: #4CAF50; /* couleur du bouton */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    width: 100%; /* aussi large que les encarts */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 footer {
     background-color: #ddd;
     color: rgb(3, 3, 3);

@@ -13,27 +13,18 @@
         </a>
         <a href="login.html" class="login-button" id="login-link">Login</a>
     </header>
-    <nav>
-        <div class="nav-buttons">
-            <a href="index.html" class="nav-button">Home</a>
-            <a href="place.html" class="nav-button">Place</a>
-        </div>
-    </nav>
     <main>
-        <h1>Location</h1>
-        <label for="country-filter">Filter by country:</label>
-        <select id="country-filter">
-            <option value="">All</option>
-            <option value="france">France</option>
-            <option value="united-states">United States</option>
-            <option value="spain">Spain</option>
-            <option value="bretagne">Bretagne</option>
-            <!-- Add options dynamically if needed -->
-        </select>
-
+        <h1 class="title">Available Places</h1>
+        <div class="filter-container">
+            <label for="country-filter">Filter by country:</label>
+            <select id="country-filter">
+                <option value="all">All</option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+            </select>
+        </div>
         <section id="places-list"></section>
     </main>
-
     <footer>
         <p>&copy; 2024 All rights reserved.</p>
     </footer>

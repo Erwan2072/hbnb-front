@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places</title>
+    <title>Index</title>
     <link rel="stylesheet" href="styles_index.css">
 </head>
 <body>
@@ -13,7 +13,12 @@
         </a>
         <a href="login.html" class="login-button" id="login-link">Login</a>
     </header>
-
+    <nav>
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="review.html" class="nav-button">Review</a>
+        </div>
+    </nav>
     <main>
         <h1>Location</h1>
         <label for="country-filter">Filter by country:</label>
@@ -26,30 +31,7 @@
             <!-- Add options dynamically if needed -->
         </select>
 
-        <section id="places-list">
-            <div class="place-card">
-                <img src="place 1.jpg" alt="Place 1" class="place-image">
-                <h2>House Center</h2>
-                <p>Price per night: $100</p>
-                <p>Location: Rennes, France Bretagne</p>
-                <button class="details-button">View Details</button>
-            </div>
-            <div class="place-card">
-                <img src="place 2.jpg" alt="Place 2" class="place-image">
-                <h2>House Typics</h2>
-                <p>Price per night: $150</p>
-                <p>Location: Pont Aven, France Bretagne</p>
-                <button class="details-button">View Details</button>
-            </div>
-            <div class="place-card">
-                <img src="place 3.jpg" alt="Place 3" class="place-image">
-                <h2>seaside house</h2>
-                <p>Price per night: $200</p>
-                <p>Location: Bretagne, French</p>
-                <button class="details-button">View Details</button>
-            </div>
-            <!-- Add more place-cards as needed -->
-        </section>
+        <section id="places-list"></section>
     </main>
 
     <footer>

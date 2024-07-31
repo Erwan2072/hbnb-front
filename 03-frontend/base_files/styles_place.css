@@ -109,22 +109,26 @@ h1, h2, h3 {
     font-size: 16px;
     cursor: pointer;
 }
-.nav-bar {
+.nav-buttons {
     display: flex;
     justify-content: center;
     background-color: #F4F4F4;
     padding: 10px 0;
 }
 
-.nav-bar {
+.nav-button {
     color: white;
-    background-color: #F4F4F4;
+    background-color: #4CAF50;
     padding: 10px 20px;
     margin: 0 10px;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #45a049;
 }
 
 footer {

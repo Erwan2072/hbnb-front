@@ -104,10 +104,12 @@ button {
 button:hover {
     background-color: #a3f781; /* Change this color as needed */
 }
-.place-image{
-    width: 100%; /* ou tout autre pourcentage désiré */
-    height: auto; /* Conserve le ratio de l'image */
-    border-radius: 10px; /* Optionnel, pour des coins arrondis */
+.place-image {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 footer {

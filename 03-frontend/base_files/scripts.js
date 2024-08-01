@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (parts.length === 2) return parts.pop().split(';').shift();
     }
 
-// All places part //
+    // All places part //
     if (document.getElementById('places-list')) {
         let places = []
 
@@ -236,5 +236,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         }
+    }
+
+    // Ajout du gestionnaire d'événement pour le bouton "Add Review"
+    const addReviewButton = document.getElementById('add-review-button');
+    if (addReviewButton) {
+        addReviewButton.addEventListener('click', () => {
+            if (!token) {
+                window.location.href = 'login.html';
+            } else {
+                window.location.href = 'add_review.html';
+            }
+        });
     }
 });

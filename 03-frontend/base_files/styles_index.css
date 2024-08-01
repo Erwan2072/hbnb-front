@@ -88,7 +88,7 @@ label {
     text-align: left;
 }
 
-.details-button {
+button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -101,7 +101,7 @@ label {
     transition: background-color 0.3s ease;
 }
 
-.details-button:hover {
+button:hover {
     background-color: #a3f781; /* Change this color as needed */
 }
 .place-image{

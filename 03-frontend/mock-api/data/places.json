@@ -1,5 +1,6 @@
 [
     {
+        "image_url": "base_files/img/1.jpg",
         "id": "place-1",
         "host_id": "user-1",
         "host_name": "John Doe",

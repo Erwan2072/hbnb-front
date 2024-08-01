@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             goToPlaceDetails();
         }
-
+        
         // Ajoute les événements pour naviguer vers les détails d'un lieu
         function goToPlaceDetails() {
             const buttons = document.querySelectorAll('#details-button');

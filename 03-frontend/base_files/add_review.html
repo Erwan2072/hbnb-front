@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Review</title>
+    <title>Add a Review</title>
     <link rel="stylesheet" href="styles_add_review.css">
+    <link rel="icon" href="icon.png">
+    <script src="scripts.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.location.pathname.endsWith('add_review.html')) {
+                window.location.replace('index.html');
+            }
+        });
+    </script>
 </head>
 <body>
-    <main>
-        <form id="review-form" class="add-review-form">
-            <h2>Add a Review</h2>
-            <label for="place">Place:</label>
-            <input type="text" id="place" name="place" readonly>
-
-            <label for="review">Review:</label>
-            <textarea id="review" name="review" required></textarea>
-
-            <label for="rating">Rating:</label>
-            <select id="rating" name="rating" required>
-                <option value="5">★★★★★</option>
-                <option value="4">★★★★</option>
-                <option value="3">★★★</option>
-                <option value="2">★★</option>
-                <option value="1">★</option>
-            </select>
-
-            <button type="submit">Submit</button>
-        </form>
-    </main>
+    <section>
+            <h2 class="title">Add a Review</h2>
+            <form id="review-form" class="add-review-form">
+                <label for="review-text">Review:</label>
+                <textarea id="review-text" name="review" required></textarea>
+                <label for="review-rating">Rating:</label>
+                <select id="review-rating" name="rating" required>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="2">★★</option>
+                    <option value="1">★</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
     <footer>
         <p>&copy; 2024 HBnB Evolution. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>

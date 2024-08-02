@@ -32,7 +32,7 @@ nav a:hover, .login-button:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 70px;
     text-align: center;
 }
 
@@ -40,45 +40,58 @@ h2 {
     color: #49a2f5; /* Changer la couleur selon vos préférences */
 }
 
-.add-review-form {
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 40px;
-    border: 1px solid #ddd;
-    border-radius: 5%;
+.add-review {
     background-color: #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.add-review-form label, .add-review-form input, .add-review-form textarea, .add-review-form button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-}
-
-.add-review-form input, .add-review-form textarea, .add-review-form select {
-    padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
-.add-review-form textarea {
-    height: 100px;
+.add-review h2 {
+    color: #49a2f5;
+    text-align: center;
+}
+
+.add-review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-review-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Aligne les labels à gauche */
+}
+
+.add-review-form textarea,
+.add-review-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; /* Augmente la taille de la police */
 }
 
 .add-review-form button {
-    background-color: #4CAF50; /* Changer la couleur selon vos préférences */
+    width: 100%;
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .add-review-form button:hover {
-    background-color: #a3f781; /* Changer la couleur selon vos préférences */
+    background-color: #45a049;
 }
 
 footer {
